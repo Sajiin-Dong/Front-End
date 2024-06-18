@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "405131981491",
+    "project_id": "sajiin-dong-7b764",
+    "storage_bucket": "sajiin-dong-7b764.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405131981491:android:7e4cc27dd3ec14ac7b36c6",
+        "android_client_info": {
+          "package_name": "com.example.sajiindong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405131981491-q3i3fr72h4ffcfjdeajddvqckjkorogb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSvnIOPpCaI_8n53XY1JlLBNe3kVGAqwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405131981491-q3i3fr72h4ffcfjdeajddvqckjkorogb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
