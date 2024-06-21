@@ -5,4 +5,6 @@ data class Foods(
     var diet: String = "",
     var photo: Int = 0,
     var description: String = ""
-)
+) {
+    val calories: String = ""
+}

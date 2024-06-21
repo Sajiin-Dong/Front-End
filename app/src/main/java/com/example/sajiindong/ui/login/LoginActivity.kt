@@ -3,6 +3,8 @@ package com.example.sajiindong.ui.login
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.method.LinkMovementMethod
@@ -17,6 +19,7 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.sajiindong.R
 import com.example.sajiindong.ui.main.MainActivity
 import com.example.sajiindong.ui.register.RegisterActivity
@@ -38,6 +41,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var btnLogin: Button
     private lateinit var textViewRegister: TextView
     private lateinit var btnGoogleSignIn: SignInButton
+    private lateinit var loginLayout: ConstraintLayout
+    private lateinit var loadingLayout: ConstraintLayout
 
     private lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var mAuth: FirebaseAuth
@@ -54,6 +59,9 @@ class LoginActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.btnLogin)
         textViewRegister = findViewById(R.id.textViewRegister)
         btnGoogleSignIn = findViewById(R.id.btnGoogleSignIn)
+        loginLayout = findViewById(R.id.loginLayout)
+        loadingLayout = findViewById(R.id.loadingLayout)
+
         hideActionBar()
 
         mAuth = FirebaseAuth.getInstance()
@@ -85,7 +93,11 @@ class LoginActivity : AppCompatActivity() {
         val spannableString = SpannableString(registerText)
         val registerHere = object : ClickableSpan() {
             override fun onClick(widget: View) {
-                startActivity(Intent(applicationContext, RegisterActivity::class.java))
+                showLoading(true)
+                Handler(Looper.getMainLooper()).postDelayed({
+                    showLoading(false)
+                    startActivity(Intent(applicationContext, RegisterActivity::class.java))
+                }, 1000)
             }
         }
 
@@ -104,7 +116,9 @@ class LoginActivity : AppCompatActivity() {
             val email = etEmail.text.toString()
             val password = etPassword.text.toString()
             if (email.isNotEmpty() && password.isNotEmpty()) {
+                showLoading(true)
                 mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
+                    showLoading(false)
                     if (task.isSuccessful) {
                         if (mAuth.currentUser?.isEmailVerified == true) {
                             Toast.makeText(applicationContext, "Login Berhasil", Toast.LENGTH_SHORT).show()
@@ -123,6 +137,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun signIn() {
+        showLoading(true)
         val signInIntent = mGoogleSignInClient.signInIntent
         googleSignInLauncher.launch(signInIntent)
     }
@@ -132,6 +147,7 @@ class LoginActivity : AppCompatActivity() {
             val account = completedTask.getResult(ApiException::class.java)
             account?.let { firebaseAuthWithGoogle(it) }
         } catch (e: ApiException) {
+            showLoading(false)
             Log.w("LoginActivity", "Google sign in failed", e)
         }
     }
@@ -140,12 +156,23 @@ class LoginActivity : AppCompatActivity() {
         val credential: AuthCredential = GoogleAuthProvider.getCredential(acct.idToken, null)
         mAuth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
+                showLoading(false)
                 if (task.isSuccessful) {
                     startActivity(Intent(applicationContext, MainActivity::class.java))
                 } else {
                     Toast.makeText(applicationContext, "Authentication Failed.", Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+        if (isLoading) {
+            loadingLayout.visibility = View.VISIBLE
+            loginLayout.visibility = View.GONE
+        } else {
+            loadingLayout.visibility = View.GONE
+            loginLayout.visibility = View.VISIBLE
+        }
     }
 
     private fun hideActionBar() {

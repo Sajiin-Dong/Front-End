@@ -45,4 +45,18 @@
     <string name="button_letsgo_bulking">Let\'s go bulking with me !</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calories">Calories</string>
+    <string name="enter_weight_loss_goal_kg">Enter weight loss goal (kg)</string>
+    <string name="get_recommendations">Get Recommendations</string>
+    <string name="recommendations_will_appear_here">Recommendations will appear here</string>
+    <string name="amount">Amount</string>
+    <string-array name="category_array">
+        <item>Diet</item>
+        <item>Bulking</item>
+    </string-array>
+
+    <string-array name="food_or_beverage_array">
+        <item>Makanan</item>
+        <item>Minuman</item>
+    </string-array>
 </resources>

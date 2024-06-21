@@ -13,7 +13,7 @@ import com.example.sajiindong.R
 import com.example.sajiindong.model.Foods
 import com.example.sajiindong.ui.detail.DetailDiet
 
-class DietFoodAdapter(private val listFood: ArrayList<Foods>) :
+class DietFoodAdapter(private val listFood: List<Foods>) :
     RecyclerView.Adapter<DietFoodAdapter.ListViewHolder>() {
 
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

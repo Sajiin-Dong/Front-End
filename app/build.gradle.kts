@@ -41,11 +41,20 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
         compose = true
         buildConfig = true
+        mlModelBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.12"
+    }
+    sourceSets {
+        getByName("main") {
+            assets {
+                srcDirs("src\\main\\assets", "src\\main\\assets")
+            }
+        }
     }
 }
 
@@ -63,6 +72,10 @@ dependencies {
     implementation(libs.firebase.database.ktx)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.recyclerview)
+    implementation(libs.tensorflow.lite.support)
+    implementation(libs.tensorflow.lite.metadata)
+    implementation(libs.tensorflow.lite.gpu)
+    implementation(libs.play.services.fitness)
     testImplementation(libs.junit)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
@@ -97,4 +110,10 @@ dependencies {
     implementation (libs.play.services.auth.v1920)
     implementation (libs.firebase.auth)
     implementation (libs.google.firebase.database.ktx)
+    implementation (libs.opencsv)
+
+
+    //tensor
+    implementation (libs.tensorflow.lite)
+    implementation (libs.tensorflow.lite.support.v031)
 }
