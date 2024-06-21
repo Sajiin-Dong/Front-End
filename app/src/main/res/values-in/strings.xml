@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name" translatable="false">Sajiin Dong</string>
+    <string name="title_diet" translatable="false">Diet</string>
+    <string name="default_web_client_id" translatable="false">405131981491-q3i3fr72h4ffcfjdeajddvqckjkorogb.apps.googleusercontent.com</string>
+    <string name="title_bulking" translatable="false">Bulking</string>
+    <string name="title_profile" translatable="false">Profil</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="error_message" translatable="false">Ada masalah dengan server kami.\nSilakan coba lagi nanti.</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="image_error" translatable="false" />
+    <string name="invalid_password" translatable="false">Password tidak valid</string>
+    <string name="login" translatable="false">Masuk</string>
+    <string name="email_hint" translatable="false">Masukkan email Anda di sini</string>
+    <string name="password" translatable="false">Kata Sandi</string>
+    <string name="password_hint" translatable="false">Masukkan kata sandi Anda di sini</string>
+    <string name="register" translatable="false">Daftar</string>
+    <string name="username" translatable="false">Nama Pengguna</string>
+    <string name="username_hint" translatable="false">Masukkan nama pengguna Anda</string>
+    <string name="confirm_password" translatable="false">Konfirmasi Kata Sandi</string>
+    <string name="confirm_password_hint" translatable="false">Konfirmasi kata sandi Anda</string>
+    <string name="back" translatable="false">Kembali</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="invalid_email" translatable="false">Email tidak valid</string>
+    <string name="error_validation" translatable="false">Harap pastikan semua kolom input sudah benar!</string>
+    <string name="success_create_user" translatable="false">Berhasil mendaftarkan akun Anda</string>
+    <string name="invalid_name" translatable="false">Nama tidak valid</string>
+    <string name="logout" translatable="false">Keluar</string>
+    <string name="user_image" translatable="false">Gambar Pengguna</string>
+    <string name="setting" translatable="false">Pengaturan</string>
+    <string name="dark_mode" translatable="false">Mode Gelap</string>
+    <string name="language" translatable="false">Bahasa</string>
+    <string name="google_sign_in_package" translatable="false">Masuk dengan Google</string>
+    <string name="register_page" translatable="false">Belum punya akun? Daftar di sini</string>
+    <string name="full_name" translatable="false">Nama Lengkap</string>
+    <string name="back_to_login" translatable="false">Sudah punya akun! Masuk</string>
+    <string name="food_name" translatable="false">Nama Makanan</string>
+    <string name="food_description" translatable="false">Deskripsi Makanan</string>
+    <string name="food_classification" translatable="false">Lebih tentang makanan:</string>
+    <string name="image_food" translatable="false" />
+    <string name="classify_content" translatable="false">Kandungan Diet</string>
+    <string name="share" translatable="false">Bagikan</string>
+    <string name="favorite" translatable="false">Favorit</string>
+    <string name="food_description_content" translatable="false">Konten Deskripsi Makanan</string>
+    <string name="button_letsgo_diet" translatable="false">Ayo diet bersama saya!</string>
+    <string name="button_letsgo_bulking" translatable="false">Ayo bulking bersama saya!</string>
+    <string name="hello_blank_fragment" translatable="false">Halo fragmen kosong</string>
+    <string name="calories" translatable="false">Kalori</string>
+    <string name="enter_weight_loss_goal_kg" translatable="false">Masukkan tujuan penurunan berat badan (kg)</string>
+    <string name="get_recommendations" translatable="false">Dapatkan Rekomendasi</string>
+    <string name="recommendations_will_appear_here" translatable="false">Rekomendasi akan muncul di sini</string>
+    <string name="amount" translatable="false">Jumlah</string>
+    <string-array name="category_array">
+        <item>Diet</item>
+        <item>Bulking</item>
+    </string-array>
+    <string-array name="food_or_beverage_array">
+        <item>Makanan</item>
+        <item>Minuman</item>
+    </string-array>
+</resources>

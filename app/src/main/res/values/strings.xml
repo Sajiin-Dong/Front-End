@@ -1,55 +1,55 @@
 <resources>
-    <string name="app_name">Sajiin Dong</string>
-    <string name="title_diet">Diet</string>
-    <string name="default_web_client_id">405131981491-q3i3fr72h4ffcfjdeajddvqckjkorogb.apps.googleusercontent.com</string>
-    <string name="title_bulking">Bulking</string>
-    <string name="title_profile">Profile</string>
-    <string name="email">Email</string>
-    <string name="error_message">Something wrong with our server.\nPlease try again later.</string>
-    <string name="ok">OK</string>
-    <string name="image_error" />
-    <string name="invalid_password">Invalid Password</string>
-    <string name="login">Sign In</string>
-    <string name="email_hint">Insert your email here</string>
-    <string name="password">Password</string>
-    <string name="password_hint">Insert your password here</string>
-    <string name="register">Sign Up</string>
-    <string name="username">Username</string>
-    <string name="username_hint">Insert your username</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="confirm_password_hint">Confirm your password</string>
-    <string name="back">Back</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="invalid_email">Invalid Email</string>
-    <string name="error_validation">Please make sure all the input field is correct!</string>
-    <string name="success_create_user">Success register your account</string>
-    <string name="invalid_name">Invalid name</string>
-    <string name="logout">Logout</string>
-    <string name="user_image">User image</string>
-    <string name="setting">Setting</string>
-    <string name="dark_mode">Dark Mode</string>
-    <string name="language">Language</string>
-    <string name="google_sign_in_package">Google Sign In</string>
-    <string name="register_page">You don\'t have an account? Register here</string>
-    <string name="full_name">Full Name</string>
-    <string name="back_to_login">Already have an Account! Login</string>
-    <string name="food_name">Food Name</string>
-    <string name="food_description">Food Description</string>
-    <string name="food_classification">More about food :</string>
-    <string name="image_food" />
-    <string name="classify_content">Diet Content</string>
-    <string name="share">Share</string>
-    <string name="favorite">Favorite</string>
-    <string name="food_description_content">Food Description Content</string>
-    <string name="button_letsgo_diet">Let\'s go diet with me !</string>
-    <string name="button_letsgo_bulking">Let\'s go bulking with me !</string>
+    <string name="app_name" translatable="false">Sajiin Dong</string>
+    <string name="title_diet" translatable="false">Diet</string>
+    <string name="default_web_client_id" translatable="false">405131981491-q3i3fr72h4ffcfjdeajddvqckjkorogb.apps.googleusercontent.com</string>
+    <string name="title_bulking" translatable="false">Bulking</string>
+    <string name="title_profile" translatable="false">Profile</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="error_message" translatable="false">Something wrong with our server.\nPlease try again later.</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="image_error" translatable="false" />
+    <string name="invalid_password" translatable="false">Invalid Password</string>
+    <string name="login" translatable="false">Sign In</string>
+    <string name="email_hint" translatable="false">Insert your email here</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="password_hint" translatable="false">Insert your password here</string>
+    <string name="register" translatable="false">Sign Up</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="username_hint" translatable="false">Insert your username</string>
+    <string name="confirm_password" translatable="false">Confirm Password</string>
+    <string name="confirm_password_hint" translatable="false">Confirm your password</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="invalid_email" translatable="false">Invalid Email</string>
+    <string name="error_validation" translatable="false">Please make sure all the input field is correct!</string>
+    <string name="success_create_user" translatable="false">Success register your account</string>
+    <string name="invalid_name" translatable="false">Invalid name</string>
+    <string name="logout" translatable="false">Logout</string>
+    <string name="user_image" translatable="false">User image</string>
+    <string name="setting" translatable="false">Setting</string>
+    <string name="dark_mode" translatable="false">Dark Mode</string>
+    <string name="language" translatable="false">Language</string>
+    <string name="google_sign_in_package" translatable="false">Google Sign In</string>
+    <string name="register_page" translatable="false">You don\'t have an account? Register here</string>
+    <string name="full_name" translatable="false">Full Name</string>
+    <string name="back_to_login" translatable="false">Already have an Account! Login</string>
+    <string name="food_name" translatable="false">Food Name</string>
+    <string name="food_description" translatable="false">Food Description</string>
+    <string name="food_classification" translatable="false">More about food :</string>
+    <string name="image_food" translatable="false" />
+    <string name="classify_content" translatable="false">Diet Content</string>
+    <string name="share" translatable="false">Share</string>
+    <string name="favorite" translatable="false">Favorite</string>
+    <string name="food_description_content" translatable="false">Food Description Content</string>
+    <string name="button_letsgo_diet" translatable="false">Let\'s go diet with me !</string>
+    <string name="button_letsgo_bulking" translatable="false">Let\'s go bulking with me !</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="calories">Calories</string>
-    <string name="enter_weight_loss_goal_kg">Enter weight loss goal (kg)</string>
-    <string name="get_recommendations">Get Recommendations</string>
-    <string name="recommendations_will_appear_here">Recommendations will appear here</string>
-    <string name="amount">Amount</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="calories" translatable="false">Calories</string>
+    <string name="enter_weight_loss_goal_kg" translatable="false">Enter weight loss goal (kg)</string>
+    <string name="get_recommendations" translatable="false">Get Recommendations</string>
+    <string name="recommendations_will_appear_here" translatable="false">Recommendations will appear here</string>
+    <string name="amount" translatable="false">Amount</string>
     <string-array name="category_array">
         <item>Diet</item>
         <item>Bulking</item>

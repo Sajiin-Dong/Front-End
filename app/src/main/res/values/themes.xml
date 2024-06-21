@@ -36,5 +36,5 @@
         <item name="android:drawableTint" tools:targetApi="m">@color/black</item>
     </style>
 
-    <string name="theme">Theme</string>
+    <string name="theme" translatable="false">Theme</string>
 </resources>
